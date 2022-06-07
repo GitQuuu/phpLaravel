@@ -18,7 +18,7 @@ class MeetingController extends Controller
      */
     public function index()
     {
-        return "This is index";
+        return "This is index in base api";
     }
 
 

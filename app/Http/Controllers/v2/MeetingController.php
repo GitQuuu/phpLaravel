@@ -69,7 +69,12 @@ class MeetingController extends Controller
      */
     public function update(Request $request, $id)
     {
-        return 'V2 API Update';
+        $response = [
+            'success' => true,
+            'message' => "Welcome to API version 2",
+        ];
+
+        return response()->json($response, 200);
     }
 
     /**
