@@ -18,20 +18,22 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('meeting','MeetingController',[
-    'except' => ['edit','create']
-]);
+Route::get('index', 'MeetingController@index');
 
-Route::resource('meeting/registration','RegistrationController',[
-    'only' => ['store','destroy']
-]);
-
-Route::post('user',[
-    'uses' => ['AuthController@store']
-]);
-
-Route::post('user/signin',[
-    'uses' => ['AuthController@signin']
-]);
+//Route::resource('meeting','MeetingController',[
+//    'except' => ['edit','create']
+//]);
+//
+//Route::resource('meeting/registration','RegistrationController',[
+//    'only' => ['store','destroy']
+//]);
+//
+//Route::post('user',[
+//    'uses' => ['AuthController@store']
+//]);
+//
+//Route::post('user/signin',[
+//    'uses' => ['AuthController@signin']
+//]);
 
 
