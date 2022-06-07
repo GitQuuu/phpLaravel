@@ -14,7 +14,12 @@ class MeetingController extends Controller
      */
     public function index()
     {
-        return 'V2 API Index';
+        $response = [
+            'success' => true,
+            'message' => "Welcome to API version 2",
+        ];
+
+        return response()->json($response, 200);
     }
 
     /**
