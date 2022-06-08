@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'v5.4.30',
-        'version' => '5.4.30.0',
+        'pretty_version' => 'dev-develop',
+        'version' => 'dev-develop',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => 'af59c54551d9a4bb0e16e16abe6d145a5441236d',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -293,12 +293,12 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => 'v5.4.30',
-            'version' => '5.4.30.0',
+            'pretty_version' => 'dev-develop',
+            'version' => 'dev-develop',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => 'af59c54551d9a4bb0e16e16abe6d145a5441236d',
             'dev_requirement' => false,
         ),
         'laravel/tinker' => array(
@@ -493,8 +493,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0',
-                1 => '1.0.0',
+                0 => '1.0.0',
+                1 => '1.0',
             ),
         ),
         'psy/psysh' => array(
